@@ -1,0 +1,110 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: #F3D1DA;
+    min-height: 100vh;
+}
+
+.dashboard-wrapper {
+    display: flex;
+    min-height: 100vh;
+    background: linear-gradient(to right, #F3D1DA 20%, #A3C1E0 80%);
+}
+
+.dashboard-menu {
+    width: 340px;
+    background: rgba(155, 77, 110, 0.8);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 48px 32px;
+    color: #F3D1DA;
+    border-radius: 0 24px 24px 0;
+    box-shadow: 2px 0 24px rgba(0, 0, 0, 0.15);
+}
+
+.dashboard-menu h1 {
+    margin-bottom: 32px;
+    font-size: 2.3rem;
+    letter-spacing: 1px;
+}
+
+.dashboard-menu nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 40px 0;
+}
+
+.dashboard-menu nav ul li {
+    margin-bottom: 20px;
+}
+
+.dashboard-menu nav ul li a {
+    text-decoration: none;
+    color: #F3D1DA;
+    font-size: 1.2rem;
+    padding: 12px 20px;
+    border-radius: 8px;
+    display: block;
+    background-color: transparent;
+    transition: all 0.3s ease;
+}
+
+.dashboard-menu nav ul li a:hover {
+    background: #4A70B8;
+    transform: scale(1.05);
+}
+
+
+.dashboard-menu p {
+    margin-top: auto;
+    font-size: 1rem;
+    padding: 10px 16px;
+    border-radius: 6px;
+    background: rgba(255,255,255,0.1);
+    text-align: center;
+}
+
+.dashboard-image {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: transparent;
+    padding: 40px;
+}
+
+.dashboard-image img {
+    max-width: 600px;
+    width: 90%;
+    height: auto;
+    border-radius: 20px;
+    box-shadow: 0 6px 32px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease;
+}
+
+.dashboard-image img:hover {
+    transform: scale(1.05);
+}
+
+@media (max-width: 900px) {
+    .dashboard-wrapper {
+        flex-direction: column;
+        background: linear-gradient(to bottom, #F3D1DA 30%, #A3C1E0 70%);
+    }
+
+    .dashboard-menu {
+        width: 100%;
+        border-radius: 0;
+        padding: 32px 20px;
+    }
+
+    .dashboard-image {
+        padding: 20px;
+    }
+
+    .dashboard-image img {
+        max-width: 90vw;
+    }
+}

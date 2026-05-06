@@ -1,0 +1,101 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: #DCE6F1; 
+    color: #333;
+}
+
+.admin-wrapper {
+    display: flex;
+    justify-content: center;
+    padding: 40px 20px;
+}
+
+.admin-container {
+    max-width: 1000px;
+    width: 100%;
+    background: #fff;
+    border-radius: 16px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+}
+
+h1, h2 {
+    color: #8B2F5D; 
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.form-create {
+    display: grid;
+    gap: 15px;
+    background-color: #F7F0F7;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.05);
+    margin-bottom: 30px;
+}
+
+.form-create input, .form-create select {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 14px;
+}
+
+.form-create button {
+    padding: 10px;
+    background-color: #8B2F5D; 
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.form-create button:hover {
+    background-color: #A14372;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table th, table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+}
+
+table th {
+    background-color: #8B2F5D; 
+    color: white;
+}
+
+table tr:nth-child(even) {
+    background-color: #F5F5F5;
+}
+
+a.back-link {
+    display: inline-block;
+    margin-top: 25px;
+    color: #0077B6;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+a.back-link:hover {
+    text-decoration: underline;
+}
+
+.error {
+    background-color: #FFD2D2;
+    color: #A10000;
+    padding: 10px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    text-align: center;
+}
